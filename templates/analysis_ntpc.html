@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <!-- Favicon -->
+    <link href="../static/assets/img/financial-profit.png" rel="icon"> 
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">    
+    <!-- Vendor CSS Files -->
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="../static/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="../static/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    
+    <!-- Template Main CSS File -->
+    <link href="../static/assets/css/style.css" rel="stylesheet">
+    
+    <title>GRQ-Dashboard</title>
+</head>
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/financial-profit.png" alt="">
+            <span class="d-none d-lg-block">Get Rich Quick</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+        </div><!-- End Logo -->
+
+        <div class="search-bar">
+        <form class="search-form d-flex align-items-center" method="POST" action="#">
+            <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+            <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+        </form>
+        </div><!-- End Search Bar -->
+
+        <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+            <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle " href="#">
+                <i class="bi bi-search"></i>
+            </a>
+            </li><!-- End Search Icon-->
+
+            <a class="dropdown-toggle nav-link nav-profile d-flex align-items-center pe-4 " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="../static/assets/img/richie_logo.jpg" alt="Profile" class="rounded-circle">
+                <span class="d-none d-md-block ps-2">Richie</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                    <h6>Richie</h6>
+                    <span>Test User</span>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i class="bi bi-person"></i>
+                        <span>My Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                        <i class="bi bi-gear"></i>
+                        <span>Account Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                        <i class="bi bi-question-circle"></i>
+                        <span>Need Help?</span>
+                    </a>
+                </li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a class="dropdown-item d-flex align-items-center" href="#">
+                        <i class="bi bi-box-arrow-right"></i>
+                        <span>Sign Out</span>
+                    </a>
+                </li>
+            </ul><!-- End Profile Dropdown Items -->
+    
+
+
+        </ul>
+        </nav><!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+        <div class="row">
+              <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4">
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link" href="#item-1">NTPC</a>
+                  <a class="nav-link" href="#item-3">Results</a>
+                  <a class="nav-link" href="#item-4">News</a>
+                </nav>
+              </nav>
+            </div>
+    </aside>
+    <!-- End Sidebar-->
+
+    <!-- Main -->
+    <main id="main" class="main">
+        <div class="row">
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                <div id="item-1">
+                    <!-- Stock Information -->
+                    <div class="card overflow-auto p-4">
+                        <h1 style="font-weight: bold;">NTPC Ltd
+                        </h1>
+                        <div class="row">
+                            <div class="col-xxl-2" style="font-weight: 800; color: blue; font-size: larger;"><a href="https://www.ntpc.co.in/">ntpc.co.in</a></div>
+                            <div class="col-xxl-2" style="font-weight: 800; font-size: larger;"> BSE: 532555</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-8 border rounded-2 mt-4">
+                                <table class="table table-borderless">
+                                      <tbody>
+                                        <tr>
+                                          <td>Market Cap</td>
+                                          <td id="analysis-table-data-value">{{MarketCap}}</td>
+                                          <td>Current Price</td>
+                                          <td id="analysis-table-data-value">{{CurrentPrice}}</td>
+                                          <td>High</td>
+                                          <td id="analysis-table-data-value">{{HighLow}}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Stock P/E</td>
+                                          <td id="analysis-table-data-value">{{StockPE}}</td>
+                                          <td>Book Value</td>
+                                          <td id="analysis-table-data-value">{{BookValue}}</td>
+                                          <td>Dividend Yield</td>
+                                          <td id="analysis-table-data-value">{{DividendYield}}</td>
+                                        </tr>
+                                        <tr>
+                                          <td>ROCE</td>
+                                          <td id="analysis-table-data-value">{{ROCE}}</td>
+                                          <td>ROE</td>
+                                          <td id="analysis-table-data-value">{{ROE}}</td>
+                                          <td>Face Value</td>
+                                          <td id="analysis-table-data-value">{{FaceValue}}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xxl-4 ps-4 pt-4">
+                                <h4 style="font-weight: 600;">About</h4>
+                                <p class="pb-0 mb-0" style=" font-weight: 400;width: fit-content; overflow: hidden; height: 8ch;" id="increase-size-paragraph">NTPC (National Thermal Power Corporation) Ltd along with its subsidiaries/ associates & JVs is primarily involved in generation and sale of bulk power to State power utilities. Other business of the group includes providing consultancy, project management & supervision, energy trading, oil & gas exploration and coal mining.[1]
+                                </p>
+                                <script>
+                                    var count = 0;
+                                    function sizeIncrease() {
+                                        if (count == 0){
+                                            document.getElementById('increase-size-paragraph').style.height = 'fit-content';
+                                            document.getElementById('increase-size-span').innerHTML = '-less';
+                                            count = 1;
+                                        }else {
+                                            document.getElementById('increase-size-paragraph').style.height = '8ch';
+                                            document.getElementById('increase-size-span').innerHTML = '+more';
+                                            count = 0;
+                                        }
+                                    }
+                                </script>
+                                <span><button class="btn p-0 m-0" style="background: none;border: none;font-weight: 600;text-decoration: underline;" onclick="sizeIncrease()" id="increase-size-span">+more</button></span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-2">
+                    <div class="row">
+                        <!-- Reports -->
+                        <div class="col-12 ">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title">Reports <span>/Today</span></h5>
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div id="tradingview_8289d" class="reports" style="max-height: 500px;"></div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                                <script type="text/javascript">
+                                new TradingView.widget(
+                                {
+                                "autosize": true,
+                                "symbol": "BSE:PATELENG",
+                                "interval": "1D",
+                                "timezone": "Etc/UTC",
+                                "theme": "light",
+                                "style": "1",
+                                "locale": "in",
+                                "toolbar_bg": "#f1f3f6",
+                                "enable_publishing": false,
+                                "hide_top_toolbar": false,
+                                "save_image": false,
+                                "allow_symbol_change": true,
+                                "container_id": "tradingview_8289d"
+                            }
+                                );
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+                            
+                            </div>
+                        </div>
+                    </div><!-- End Reports -->
+                </div>
+                <div id="item-3">
+                    <div class="card overflow-auto p-4">
+                        <div class="row align-items-stretch g-4 ">
+                            <div class="col-lg-8">
+                                <h1>Our Analysis</h1>
+                                <h5>Suggested Action: BUY</h5>
+                                <p>According to our AI Model the best action you can take is to BUY more stocks of NTPC for future gains.<br>If You have not purchased the stock till now this is the best time to invest in this.You can buy it now for great gains in the future<br>
+                                Please see our other analysis such as statistical analysis as well as news review to make up your mind. Do not follow our advice blindly</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div class="tradingview-widget-container__widget"></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                                    {
+                                    "interval": "1D",
+                                    "width": 390,
+                                    "isTransparent": false,
+                                    "height": 420,
+                                    "symbol": "NSE:PATELENG",
+                                    "showIntervalTabs": true,
+                                    "locale": "in",
+                                    "colorTheme": "light"
+                                }
+                                    </script>
+                                </div>
+                                <!-- TradingView Widget END -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card overflow-auto p-4">
+                        <div class="row align-items-stretch g-4 ">
+                            <div class="col-lg-7">
+                                <h1>Today's News Analysis(<a href="https://m.economictimes.com/markets/stocks/recos/buy-ntpc-ltd-target-price-rs-189-0-yes-securities/articleshow/100175329.cms">Click here to read the news</a>)</h1>                                
+                                <ul>
+                                    <li>Sentiment Analysis: Positive</li>
+                                    <li>Score: 7/10</li>
+                                    <li>Stocks Affected: NTPC Limited (NTPC)</li>
+                                </ul>
+                                <p style=" font-weight: 400;width: fit-content; overflow: hidden; height: 8ch;" id="increase-size-1-paragraph">    
+                                    The news provides information about NTPC Limited's key products and revenue segments, which include electricity generation, coal, other operating revenue, consultancy income, and lease rentals.
+                                    Financially, NTPC Limited has shown positive growth. In the quarter ended 31-12-2022, the company reported a consolidated total income of Rs 44,989.21 Crore, which is a 0.69% increase compared to the previous quarter's total income of Rs 44,681.50 Crore. It is also a significant 33.17% increase compared to the total income of Rs 33,783.62 Crore in the same quarter of the previous year.
+                                    Based on this news, the sentiment towards NTPC Limited's stock is moderately positive. The increase in total income for the recent quarter indicates growth and positive performance. However, it is important to consider other factors such as operating expenses, net profit, debt, and market conditions before making investment decisions.
+                                    The sentiment analysis score of 7/10 suggests a relatively positive outlook for NTPC Limited. It is advised to conduct further research and analysis of the company's financial statements, market trends, and industry conditions to make well-informed investment decisions.
+                                </p>
+                                    <span><button class="btn p-0 m-0" style="background: none;border: none;font-weight: 600;text-decoration: underline;" onclick="sizeIncrease()" id="increase-size-1-span">+more</button></span>
+                                <script>
+                                    var count = 0;
+                                    function sizeIncrease() {
+                                        if (count == 0){
+                                            document.getElementById('increase-size-1-paragraph').style.height = 'fit-content';
+                                            document.getElementById('increase-size-1-span').innerHTML = '-less';
+                                            count = 1;
+                                        }else {
+                                            document.getElementById('increase-size-1-paragraph').style.height = '8ch';
+                                            document.getElementById('increase-size-1-span').innerHTML = '+more';
+                                            count = 0;
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <div class="col-lg-5">
+                                <h1>Pros & Cons</h1>
+                                <ul class="list">
+                                    <li>Stock is trading at 1.20 times its book value</li>
+                                    <li>Stock is providing a good dividend yield of 4.00%.</li>
+                                    <li>Company has been maintaining a healthy dividend payout of 36.1%</li>
+                                    <li>The company has delivered a poor sales growth of 10.1% over past five years.</li>
+                                    <li>Company has a low return on equity of 11.4% over last 3 years.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </div>
+                </div>
+                <div id="item-4">
+                    <div class="card">
+                        <div class="card-body" >
+                            <h5 class="card-title">News <span>/Today</span></h5>
+                            <div class="search-wrapper mb-4" style="display: none;">
+                                <label for="news-search">Search</label>
+                                <input type="search" id="news-search" news-data-search>
+                            </div>
+                            <div class="news-card rounded-3" style="height: 440px; overflow: scroll;" data-news-cards-container></div>
+                            <template data-news-template>
+                                <div class="news-card" style="width: 96%;">
+                                    <div class="row flex-row ">
+                                        <div class="col-lg-3">
+                                            <div class="news-image mt-2 mb-2 pe-2" data-image></div>
+                                        </div>
+                                        <div class="col-lg-8 mb-2">
+                                            <div class="news-title fw-bold" data-title></div>
+                                            <div class="news-description" data-description></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>                
+                            <script>
+                                const newsCardTemplate = document.querySelector("[data-news-template]")
+                                const newsCardContainer = document.querySelector("[data-news-cards-container]")
+                                const searchInput = document.querySelector("[news-data-search]")
+                        
+                                var apiKey = "6f10510f9e5f4795ac5382caf6219c31";
+                                var url = "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=" + apiKey;
+                        
+                                let articles = []
+                                searchInput.addEventListener("input", e => {
+                                    const value = e.target.value.toLowerCase()
+                                    articles.forEach(article => {
+                                        const isVisible = (article.title?article.title:'').toLowerCase().includes(value) || (article.description?article.description:'').toLowerCase().includes(value)
+                                        article.element.classList.toggle("hide", !isVisible)
+                                    })
+                                })
+                        
+                                fetch(url).then(res => res.json()).then(data => {
+                                    articles = Object.values(data.articles).map(news => {
+                                        const newsCard = newsCardTemplate.content.cloneNode(true).children[0]
+                                        const image = newsCard.querySelector("[data-image]")
+                                        console.log(image)
+                                        const title = newsCard.querySelector("[data-title]")
+                                        const description = newsCard.querySelector("[data-description]")
+                                        image.innerHTML = "<img src=\"" + (news.urlToImage?news.urlToImage:'https://via.placeholder.com/200x150?text=No+Image') + "\" class=\"rounded-pill\" width=\"100px\" height=\"100px\">"
+                                        title.textContent = news.title
+                                        description.textContent = news.description
+                                        newsCardContainer.append(newsCard)
+                                        return { title: news.title, description: news.description, element: newsCard }
+                                    });
+                        
+                                })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- Footer -->
+    <footer class="bottom">
+        <ul class="nav justify-content-center border-bottom mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2023 Get Rich Quick, Inc</p>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="../static/assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="../static/assets/vendor/echarts/echarts.min.js"></script>
+    <script src="../static/assets/vendor/quill/quill.min.js"></script>
+    <script src="../static/assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="../static/assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+    <script src="../static/assets/js/main.js"></script>
+
+</body>
+</html>
