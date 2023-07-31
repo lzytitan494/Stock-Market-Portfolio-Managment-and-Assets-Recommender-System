@@ -4,3 +4,4 @@ firebase-admin
 Pyrebase
 fastapi
 beautifulsoup4
+requests==2.30.0
