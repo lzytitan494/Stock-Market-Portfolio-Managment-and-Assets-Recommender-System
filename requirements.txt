@@ -1,6 +1,6 @@
+gunicorn
 uvicorn
 firebase-admin
 Pyrebase
-jsonlib
 fastapi
 beautifulsoup4
